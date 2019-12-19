@@ -14,7 +14,34 @@
 		5D564D9B23AB748B0018AC13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D564D9A23AB748B0018AC13 /* Assets.xcassets */; };
 		5D564D9E23AB748B0018AC13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D564D9C23AB748B0018AC13 /* LaunchScreen.storyboard */; };
 		5D564DA423AB759F0018AC13 /* iButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D564DA323AB759F0018AC13 /* iButton.swift */; };
+		5D564DAB23AB78580018AC13 /* iButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D564D8223AB73920018AC13 /* iButton.framework */; };
+		5D564DAC23AB7ACE0018AC13 /* iButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D564D8223AB73920018AC13 /* iButton.framework */; };
+		5D564DAD23AB7ACE0018AC13 /* iButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D564D8223AB73920018AC13 /* iButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D564DAE23AB7ACE0018AC13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D564D7923AB73920018AC13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D564D8123AB73920018AC13;
+			remoteInfo = iButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D564DB023AB7ACE0018AC13 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5D564DAD23AB7ACE0018AC13 /* iButton.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5D564D8223AB73920018AC13 /* iButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D564DAC23AB7ACE0018AC13 /* iButton.framework in Frameworks */,
+				5D564DAB23AB78580018AC13 /* iButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +83,7 @@
 				5D564D8423AB73920018AC13 /* iButton */,
 				5D564D9223AB74890018AC13 /* iButtonExample */,
 				5D564D8323AB73920018AC13 /* Products */,
+				5D564DAA23AB78580018AC13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +117,13 @@
 				5D564D9F23AB748B0018AC13 /* Info.plist */,
 			);
 			path = iButtonExample;
+			sourceTree = "<group>";
+		};
+		5D564DAA23AB78580018AC13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,10 +165,12 @@
 				5D564D8D23AB74890018AC13 /* Sources */,
 				5D564D8E23AB74890018AC13 /* Frameworks */,
 				5D564D8F23AB74890018AC13 /* Resources */,
+				5D564DB023AB7ACE0018AC13 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5D564DAF23AB7ACE0018AC13 /* PBXTargetDependency */,
 			);
 			name = iButtonExample;
 			productName = iButtonExample;
@@ -215,6 +254,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D564DAF23AB7ACE0018AC13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D564D8123AB73920018AC13 /* iButton */;
+			targetProxy = 5D564DAE23AB7ACE0018AC13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5D564D9723AB74890018AC13 /* Main.storyboard */ = {
@@ -414,6 +461,7 @@
 		5D564DA123AB748B0018AC13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BLVLJQQABH;
@@ -432,6 +480,7 @@
 		5D564DA223AB748B0018AC13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BLVLJQQABH;

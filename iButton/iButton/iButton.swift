@@ -8,11 +8,11 @@
 
 import UIKit
 
-class iButton: UIButton {
+public class iButton: UIButton {
     
-    typealias DidTapButton = (iButton) -> ()
+    public typealias DidTapButton = (iButton) -> ()
     
-    var didTouchUpInside: DidTapButton? {
+    public var didTouchUpInside: DidTapButton? {
         didSet {
             if didTouchUpInside != nil {
                 addTarget(self, action: #selector(didTouchUpInside(_:)), for: .touchUpInside)
