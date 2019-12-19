@@ -13,6 +13,7 @@
 		5D564D9923AB74890018AC13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D564D9723AB74890018AC13 /* Main.storyboard */; };
 		5D564D9B23AB748B0018AC13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D564D9A23AB748B0018AC13 /* Assets.xcassets */; };
 		5D564D9E23AB748B0018AC13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D564D9C23AB748B0018AC13 /* LaunchScreen.storyboard */; };
+		5D564DA423AB759F0018AC13 /* iButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D564DA323AB759F0018AC13 /* iButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5D564D9A23AB748B0018AC13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D564D9D23AB748B0018AC13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D564D9F23AB748B0018AC13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D564DA323AB759F0018AC13 /* iButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				5D564D8523AB73920018AC13 /* iButton.h */,
 				5D564D8623AB73920018AC13 /* Info.plist */,
+				5D564DA323AB759F0018AC13 /* iButton.swift */,
 			);
 			path = iButton;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					5D564D8123AB73920018AC13 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					5D564D9023AB74890018AC13 = {
 						CreatedOnToolsVersion = 10.3;
@@ -197,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D564DA423AB759F0018AC13 /* iButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +361,7 @@
 		5D564D8B23AB73920018AC13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -373,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.city.iButton;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,6 +388,7 @@
 		5D564D8C23AB73920018AC13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
